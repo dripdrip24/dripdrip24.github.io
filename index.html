@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+<HTML> 
+<HEAD>
+	<TITLE> DRIP DRIP </TITLE>
+	<CENTER> <IMG src=images/logo.png id=logo> </IMG> </CENTER> 
+	<STYLE type='text/css'> 
+	#ray {
+	width:30%;
+  	height:59%;
+  	position: absolute;
+  	top:37%;
+  	left:65%;
+  	-webkit-transition:all.2s ease,;
+  	-moz-transition: all 2s ease;
+  	-ms-transition: all 2s. ease;
+  	-o-transition:  all 2s ease;
+  	transition: all 2s ease;
+  	z-index:0;
+	} 
+
+	#waterimg{
+	width:35%;
+  	height:55%;
+  	position:absolute;
+  	left:13%;
+	}
+
+
+    #triangle-right {
+      width:10px;
+      height: -10%;
+      position:fixed;
+      top:60%;
+      left:49%;
+      border-top: 50px solid transparent;
+      border-left: 100px solid black;
+      border-bottom: 50px solid transparent;
+
+    } 
+    #triangle-right:hover {   
+      border-left: 100px solid grey;
+    } 
+      #triangle-left {
+      width: 0;
+      height: 0;
+      position: fixed;
+      top:60%;
+      left:5%;
+      border-top: 50px solid transparent;
+      border-right: 100px solid red;
+      border-bottom: 50px solid transparent;
+    }
+     #triangle-left:hover {   
+      border-right: 100px solid grey;
+
+	</STYLE>
+
+</HEAD>
+<BODY bgcolor=#FFDBE9> 
+  <SCRIPT>
+      var count=0;
+
+  </SCRIPT>
+<TABLE border=1 width='100%'>
+	<TR> 
+		<TD align=center a href="file:///Users/anson/Desktop/Design/subpage%201.html"> Background information </TD>
+		<TD align=center> Positive things about water</TD>
+		<TD align=center> Benefits of drinking water everyday</TD> 
+		<TD align=center> How water is important to Athletes </TD>
+	</TR>
+
+</TABLE> </CENTER> <BR> <BR>
+
+<DIV id='menubg'></DIV>
+
+<DIV id='triangle-right' onclick="
+      count++;  
+      if(count==0){
+        water.src='images/water.jpg';
+      }
+     else if(count==1){
+     	water.src='images/watergraph.png';
+     }
+     else if(count==2){
+     	water.src='images/watergraph1.jpg';
+     }
+     else if(count==3){
+     	water.src='images/waterinfographic.jpg';
+     }
+     else if(count==4){
+     	water.src='images/graph3.png';
+     }
+     else{
+     	count=0;
+     	water.src='images/water.jpg';
+     }
+        "></DIV>
+
+<DIV id='triangle-left' onclick="
+      count--;  
+      if(count==0){
+        water.src='images/water.jpg';
+      }
+     else if(count==1){
+     	water.src='images/watergraph.png';
+     }
+     else if(count==2){
+     	water.src='images/watergraph1.jpg';
+     }
+     else if(count==3){
+     	water.src='images/waterinfographic.jpg';
+     }
+     else if(count==4){
+     	water.src='images/graph3.png';
+     }
+     else{
+     	count=4;
+     	water.src='images/water.jpg';
+     }
+        "></DIV></DIV>
+
+<IMG src=images/IMG_9351.JPG id=ray> </IMG>
+
+<IMG src=images/water.jpg name=water id=waterimg> </IMG> 
+
